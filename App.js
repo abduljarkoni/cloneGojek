@@ -197,9 +197,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/goride.jpeg')}
+                    style={{width: 50, height: 50}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,
@@ -216,9 +223,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/gocar.png')}
+                    style={{width: 50, height: 50, paddingHorizontal: 10}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,
@@ -235,9 +249,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/gocar1.jpeg')}
+                    style={{width: 50, height: 50}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,
@@ -254,9 +275,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/gosend.jpeg')}
+                    style={{width: 50, height: 50}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,
@@ -282,9 +310,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/godeals.jpeg')}
+                    style={{width: 50, height: 50}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,
@@ -301,9 +336,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/gopulsa.jpeg')}
+                    style={{width: 50, height: 50}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,
@@ -320,9 +362,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/gofood.jpeg')}
+                    style={{width: 50, height: 50}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,
@@ -339,9 +388,16 @@ const App = () => {
                     width: 58,
                     height: 58,
                     borderWidth: 2,
-                    borderColor: '#EFEFEF',
-                    borderRadius: 18,
-                  }}></View>
+                    borderColor: 'lightgrey',
+                    borderRadius: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('./icon/gomore.png')}
+                    style={{width: 50, height: 50}}
+                  />
+                </View>
                 <Text
                   style={{
                     fontSize: 11,

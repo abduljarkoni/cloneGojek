@@ -518,8 +518,8 @@ const App = () => {
           </View>
 
           {/* 5.section banner information internal gojek */}
-          <View style={{padding: 16}}>
-            <View style={{height: 25, width: 70}}>
+          <View style={{padding: 16, paddingBottom: 0}}>
+            <View style={{height: 25, width: 70, marginLeft: -12}}>
               <Image
                 source={require('./icon/logogojek.png')}
                 style={{
@@ -529,17 +529,35 @@ const App = () => {
                 }}
               />
             </View>
-            <Text style={{fontSize: 17, fontWeight: 'bold'}}>
+            <Text style={{fontSize: 17, fontWeight: 'bold', marginBottom: 15}}>
               Complete your profile
             </Text>
-            <View>
-              <Image
-                source={require('./icon/fb.png')}
-                style={{width: 100, height: 100}}
-              />
+            <View style={{flexDirection: 'row', marginBottom: 16}}>
               <View>
-                <Text>Connect With Facebook</Text>
-                <Text>Login faster without verification code</Text>
+                <Image
+                  source={require('./icon/fb.png')}
+                  style={{width: 60, height: 60}}
+                />
+              </View>
+
+              {/* flex: 1 membaut content memnuhi ruang sisanya 100% 
+              width: "70%" agar textnya terbagi 2 turun ke bawah */}
+              <View style={{marginLeft: 16, flex: 1}}>
+                <Text
+                  style={{fontSize: 15, fontWeight: 'bold', color: '#4A4A4A'}}>
+                  Connect With Facebook
+                </Text>
+
+                {/* width: "70%" agar textnya terbagi 2 turun ke bawah */}
+                <Text
+                  style={{
+                    fontSize: 15,
+                    fontWeight: 'normal',
+                    color: '#4A4A4A',
+                    width: '70%',
+                  }}>
+                  Login faster without verification code
+                </Text>
               </View>
             </View>
             <TouchableOpacity
@@ -563,7 +581,6 @@ const App = () => {
             <View
               style={{
                 marginTop: 16,
-                marginBottom: 16,
                 borderBottomColor: '#E8E9ED',
                 borderBottomWidth: 1,
               }}></View>
@@ -659,11 +676,228 @@ const App = () => {
             <View
               style={{
                 marginTop: 16,
-                marginBottom: 16,
                 borderBottomColor: '#E8E9ED',
                 borderBottomWidth: 1,
               }}></View>
           </View>
+
+          {/*7. section nearby restauran /scroll komponen ke kanan dan kiri */}
+          <View>
+            <View style={{height: 25, width: 70, marginLeft: 14}}>
+              <Image
+                source={require('./news/gofood.png')}
+                style={{
+                  height: '100%',
+                  width: '100%',
+                  borderRadius: 2,
+                }}
+              />
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginBottom: 16,
+                marginHorizontal: 16,
+              }}>
+              <Text style={{fontSize: 17, fontWeight: 'bold'}}>
+                Nearby Restaurants
+              </Text>
+              <Text style={{fontSize: 17, fontWeight: 'bold', color: 'green'}}>
+                See All
+              </Text>
+            </View>
+
+            {/* membuat card/componenscroll ke samping kanan */}
+            {/* 1.buat pembungkus/wrapper all component card */}
+
+            {/* <View style={{flexDirection: 'row'}}> */}
+
+            {/* 5. membuat scroll ke samping/vertical  merubah view menjadi 
+            scrollview horizontal */}
+            {/* dalam scroll view horizontal menggunakn paddingLeft agar componen image 
+            tidak terpotong */}
+            <ScrollView
+              horizontal
+              style={{flexDirection: 'row', paddingLeft: 16}}>
+              {/* 2.buat pembuat komponen per itemnya */}
+
+              <View style={{marginRight: 16}}>
+                {/* 3.buat pembungkus image */}
+                <View
+                  style={{
+                    width: 150,
+                    height: 150,
+                    borderRadius: 8,
+                    backgroundColor: 'pink',
+                  }}>
+                  {/* membuat image agar size atau ukuranny amengikuti pembungkusnya/wrappernya
+                    menggunakan reizeMode:"cover" width dan heightny undefined */}
+                  <Image
+                    source={require('./news/burger.jpeg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                      borderRadius: 8,
+                    }}
+                  />
+                </View>
+                {/* 4. title/teks card nama toko nya*/}
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    marginTop: 12,
+                    textAlign: 'center',
+                  }}>
+                  King Burger
+                </Text>
+              </View>
+              <View style={{marginRight: 16}}>
+                {/* 3.buat pembungkus image */}
+                <View
+                  style={{
+                    width: 150,
+                    height: 150,
+                    borderRadius: 8,
+                    backgroundColor: 'pink',
+                  }}>
+                  {/* membuat image agar size atau ukuranny amengikuti pembungkusnya/wrappernya
+                    menggunakan reizeMode:"cover" width dan heightny undefined */}
+                  <Image
+                    source={require('./news/minang.jpeg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                      borderRadius: 8,
+                    }}
+                  />
+                </View>
+                {/* 4. title/teks card nama toko nya*/}
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    marginTop: 12,
+                  }}>
+                  Sederhana Minang
+                </Text>
+              </View>
+              <View style={{marginRight: 16}}>
+                {/* 3.buat pembungkus image */}
+                <View
+                  style={{
+                    width: 150,
+                    height: 150,
+                    borderRadius: 8,
+                    backgroundColor: 'pink',
+                  }}>
+                  {/* membuat image agar size atau ukuranny amengikuti pembungkusnya/wrappernya
+                    menggunakan reizeMode:"cover" width dan heightny undefined */}
+                  <Image
+                    source={require('./news/cfc.jpeg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                      borderRadius: 8,
+                    }}
+                  />
+                </View>
+                {/* 4. title/teks card nama toko nya*/}
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    marginTop: 12,
+                  }}>
+                  CFC
+                </Text>
+              </View>
+              <View style={{marginRight: 16}}>
+                {/* 3.buat pembungkus image */}
+                <View
+                  style={{
+                    width: 150,
+                    height: 150,
+                    borderRadius: 8,
+                    backgroundColor: 'pink',
+                  }}>
+                  {/* membuat image agar size atau ukuranny amengikuti pembungkusnya/wrappernya
+                    menggunakan reizeMode:"cover" width dan heightny undefined */}
+                  <Image
+                    source={require('./news/pizza.jpeg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                      borderRadius: 8,
+                    }}
+                  />
+                </View>
+                {/* 4. title/teks card nama toko nya*/}
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    marginTop: 12,
+                  }}>
+                  Pizza Hot
+                </Text>
+              </View>
+              <View style={{marginRight: 16}}>
+                {/* 3.buat pembungkus image */}
+                <View
+                  style={{
+                    width: 150,
+                    height: 150,
+                    borderRadius: 8,
+                    backgroundColor: 'pink',
+                  }}>
+                  {/* membuat image agar size atau ukuranny amengikuti pembungkusnya/wrappernya
+                    menggunakan reizeMode:"cover" width dan heightny undefined */}
+                  <Image
+                    source={require('./news/solaria.jpeg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                      borderRadius: 8,
+                    }}
+                  />
+                </View>
+                {/* 4. title/teks card nama toko nya*/}
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    marginTop: 12,
+                  }}>
+                  Solaria
+                </Text>
+              </View>
+            </ScrollView>
+          </View>
+
+          {/* membuat garis abu2 pembatas halaman/section */}
+          <View
+            style={{
+              borderBottomWidth: 1,
+              borderBottomColor: '#F2F2F4',
+              marginTop: 16,
+              marginBottom: 20,
+            }}></View>
         </ScrollView>
 
         {/* 1. navigasi utama gojek  navbar aplikasinya yang fixed/tetap*/}
